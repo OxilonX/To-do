@@ -22,6 +22,7 @@ body {
 h1 {
   text-transform: capitalize;
   font-size: 2.5rem;
+  color: rgb(9, 44, 81);
 }
 hr {
   border: 1px solid rgba(0, 0, 0, 0.342);
@@ -55,20 +56,39 @@ hr {
   align-items: center;
   background-color: #ffffff;
   gap: 0.2em;
-  padding: 0.5em 1em 0.5em 0.5em;
+  padding: 0.5em 1.5em 0.5em 1em;
   border-radius: 20px;
   font-size: 1rem;
   text-transform: capitalize;
-  gap: 0.2em;
+  gap: 0.4em;
 }
 .icon {
   width: 25px;
   height: 25px;
 }
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.task-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 0 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.task {
+  font-size: 2rem;
+  font-weight: 400;
+}
 .task-infos-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1em;
   padding: 1.2em 1em;
   border-radius: 10px;
   width: 100%;
@@ -77,23 +97,6 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.tasks {
-  display: flex;
-  flex-direction: column;
-}
-.task-container {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  max-width: 50em;
-  background-color: #f2f2f2;
-  padding: 0 1em;
-  border-radius: 10px;
-}
-.task {
-  font-size: 2rem;
-  font-weight: 400;
 }
 
 .task-lower {
@@ -109,6 +112,8 @@ hr {
 .task-categories {
   display: flex;
   gap: 0.15em;
+  flex-wrap: wrap;
+  max-width: 15em;
 }
 .task-category {
   display: flex;
