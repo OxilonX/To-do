@@ -23,4 +23,127 @@ h1 {
   text-transform: capitalize;
   font-size: 2.5rem;
 }
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  margin: 1.5em 0 2em;
+  border-radius: 1px;
+}
+.under-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0 1em;
+}
+.new-task {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+.add-task {
+  display: flex;
+  align-items: center;
+  background-color: #f2224b;
+  font-size: 1rem;
+  gap: 0.2em;
+  padding: 0.5em 1em 0.5em 0.5em;
+  border-radius: 20px;
+  color: white;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 0.2em;
+  padding: 0.5em 1em 0.5em 0.5em;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  gap: 0.2em;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+}
+.task-infos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1.2em 1em;
+  border-radius: 10px;
+  width: 100%;
+}
+.task-upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+}
+.task-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  max-width: 50em;
+  background-color: #f2f2f2;
+  padding: 0 1em;
+  border-radius: 10px;
+}
+.task {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.task-lower {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.task-categ-container {
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+}
+.task-categories {
+  display: flex;
+  gap: 0.15em;
+}
+.task-category {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  background-color: rgb(173, 245, 6);
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+}
+.task-category-2 {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  background-color: rgb(245, 110, 6);
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+}
+.task-add-new-categ {
+  display: flex;
+  align-items: center;
+}
+.add-icon {
+  width: 20px;
+  height: 20px;
+}
+.task-date {
+  background-color: transparent;
+  border: 1.5px solid #686868;
+  padding: 0.5em 0.7em;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
 /*Task page STYLING*/
