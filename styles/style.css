@@ -1,0 +1,26 @@
+/*VARIABLES*/
+:root {
+  --bg-clr: #f8f8f8;
+}
+/*General Styling*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--bg-clr);
+}
+.container {
+  max-width: 1250px;
+  margin: 2em auto;
+  padding: 0 2em;
+}
+h1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+/*Task page STYLING*/
