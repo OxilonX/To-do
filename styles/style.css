@@ -52,6 +52,7 @@ hr {
   border-radius: 20px;
   color: white;
   cursor: pointer;
+  user-select: none;
 }
 .filters {
   display: flex;
@@ -64,11 +65,13 @@ hr {
   text-transform: capitalize;
   gap: 0.4em;
   cursor: pointer;
+  user-select: none;
 }
 .icon {
   width: 25px;
   height: 25px;
   cursor: pointer;
+  user-select: none;
 }
 .tasks {
   display: flex;
@@ -107,11 +110,13 @@ hr {
   display: flex;
   align-items: center;
   gap: 2em;
+  user-select: none;
 }
 .task-categ-container {
   display: flex;
   align-items: center;
   gap: 0.1em;
+  user-select: none;
 }
 .task-categories {
   display: flex;
