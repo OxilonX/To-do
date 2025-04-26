@@ -73,6 +73,44 @@ hr {
   cursor: pointer;
   user-select: none;
 }
+.checkbox {
+  position: relative;
+  align-self: flex-start;
+  margin-top: 1.5em;
+}
+.checkbox input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  width: 1.8em;
+  height: 1.8em;
+  top: 0;
+  left: 0;
+  border: 2px solid #f2224b;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.checkbox input:checked ~ .checkmark {
+  border: 2px solid #f2224b;
+  background-color: #ffe6e6;
+}
+.checkbox input:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  border: solid #f2224b;
+  left: 9px;
+  top: 4px;
+  width: 3px;
+  height: 11px;
+  border-width: 0 3.5px 3.5px 0;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
 .tasks {
   display: flex;
   flex-direction: column;
@@ -81,7 +119,7 @@ hr {
 .task-container {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   width: 100%;
   background-color: #f2f2f2;
   padding: 0 1em;
