@@ -18,9 +18,25 @@
     <div class="container">
       <h1>to-do list</h1>
       <hr />
+      <div class="modal">
+        <div class="inner-modal">
+          <button class="close">
+            <img src="images/modal-close-icon.png" alt="" />
+          </button>
+          <div class="inputs">
+            <input
+              class="enter-task js-input"
+              type="text"
+              placeholder="Enter your task..."
+              required
+            />
+          </div>
+          <button class="modal-add-task js-add-task">add task</button>
+        </div>
+      </div>
       <div class="under-container">
         <div class="new-task">
-          <button class="add-task js-add-task">
+          <button class="add-task js-trigger-task">
             <img class="icon" src="images/icons8-plus-50.png" alt="" />
             add a new task
           </button>
@@ -45,7 +61,11 @@
                 <div>
                   <p class="task js-task">Clean your room</p>
                 </div>
-                <img class="icon" src="images/icons8-close-50.png" alt="" />
+                <img
+                  class="icon js-remove-task"
+                  src="images/icons8-close-50.png"
+                  alt=""
+                />
               </div>
               <div class="task-lower">
                 <time class="task-date js-date">15 april, 2025</time>
